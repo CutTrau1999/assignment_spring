@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "8768573f-6d27-409d-8c3c-d3b044e78d6f",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "StreetAPI",
+			"item": [
+				{
+					"name": "Get Street Api",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/streets/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Street API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\": 10,\r\n            \"name\": \"Quynh Mai\",\r\n            \"date\": \"2018\",\r\n            \"description\": \"Des\",\r\n            \"status\": \"Dang thi cong\",\r\n            \"district\": {\r\n                \"id\": 5,\r\n                \"name\": \"Hai Ba Trung\"\r\n            }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/streets/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Street By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/streets/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Street by Name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tran Cung\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/streets/search?=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								"search"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DistrictAPI",
+			"item": [
+				{
+					"name": "Get District API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/districts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"districts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
